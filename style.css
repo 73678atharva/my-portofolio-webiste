@@ -32,20 +32,28 @@ nav {
 }
 
 nav .logo {
-    height: 170px;
-    margin-left: -283px;
+    height: 165px;
+    margin-left: -232px;
     border-radius: 10px;
     left: 124px;
     position: relative;
-    width: 176px;
+    width: 180px;
     bottom: 14px;
 }
 
+nav img{
+    position: relative;
+    left: 59px;
+}
 #sideMenu {
-    margin-top: -70px;
-    margin-right: -70px;
+    margin-top: 1px;
+    margin-right: 3px;
 }
 
+nav ul{
+    position: relative;
+    top: -28px;
+}
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -54,11 +62,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 27px;
-    margin: 10px 10px;
     padding: 10px;
     position: relative;
     font-weight: 600;
+    font-size: 24px;
+    margin: 10px 18px;
+    padding: 5px
 }
 
 nav ul li a::after {
@@ -78,7 +87,7 @@ nav ul li a:hover::after {
 
 .photo {
     position: relative;
-    left: 790px;
+    left: 920px;
     top: -49px;
     width: 650px;
     height: 580px;
@@ -92,15 +101,15 @@ nav ul li a:hover::after {
 
 .header-text p {
     position: relative;
-    top: -555px;
-    left: -84px
+    top: -690px;
+    left: -55px;
 }
 
 .header-text h1 {
     font-size: 60px;
     position: relative;
-    top: -535px;
-    left: -84px
+    top: -670px;
+    left: -55px;
 }
 
 .header-text h1 span {
@@ -109,15 +118,17 @@ nav ul li a:hover::after {
 
 /* ABOUt */
 #about {
-    padding: 80px 0px;
+    padding: -16px 0px;
     color: #ababab;
+    position: relative;
+    top: 60px;
 }
 
 .about-col-1 img {
     position: relative;
-    top: 92px;
     border-radius: 10px;
-    height: 700px;
+    height: 639px;
+    top: 57px;
 }
 
 .row {
@@ -135,7 +146,7 @@ nav ul li a:hover::after {
     width: 90%;
     border-radius: 15px;
     height: 395px;
-        top: 160px;
+    top: 160px;
 }
 
 .about-col-2 {
@@ -149,11 +160,13 @@ nav ul li a:hover::after {
     text-align: justify;
     line-height: 1.5;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     position: relative;
     height: 655px;
     top: 80px;
 }
+
 .subtitle {
     font-size: 60px;
     font-weight: 600;
@@ -225,6 +238,8 @@ tab-contents li {
 /* PROJECTS */
 #services {
     padding: 30px 0;
+    position: relative;
+    top: 35px;
 }
 
 .service-list {
@@ -378,14 +393,18 @@ tab-contents li {
 /* CONTACT */
 
 .contact-left {
-    flex-basis: 50%;
+    flex-basis: 100%;
 }
 
 .contact-left p {
-    margin: 30px 0;
-    font-size: 25px;
+    margin: 29px 0;
+    font-size: 27px;
 }
-
+.contact-left{
+    top: -44px;
+    position: relative;
+    padding: 2px;
+}
 .contact-left p i {
     margin-right: 15px;
     font-size: 25px;
@@ -436,6 +455,8 @@ tab-contents li {
     transition: background 0.5s;
     text-align: center;
     word-spacing: 10px;
+    position: relative;
+    top: 21px
 }
 
 .btn.btn2:hover {
@@ -506,7 +527,7 @@ nav .cross {
 }
 
 /* CSS MEDIA QUERY */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
     .photo {
         left: -20px;
@@ -659,4 +680,240 @@ nav .cross {
         font-size: 14px;
         width: 100%;
     }
+} */
+
+/* Ensure overall container padding is responsive */
+.container {
+    padding: 10px 5%;
+}
+
+/* Adjust nav styles for smaller screens */
+/* nav ul li a {
+    font-size: 18px;
+    margin: 5px 5px;
+    padding: 5px;
+} */
+
+/* Adjust image and text sizes for smaller screens */
+@media (max-width: 768px) {
+    .photo {
+        left: 50px;
+        top: -20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .header-text {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+        top: -30px;
+        left: -10px;
+    }
+
+    .header-text p {
+        top: -40px;
+        left: -10px;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+        top: 0;
+    }
+
+    .about-col-2 p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .subtitle {
+        font-size: 40px;
+        font-size: 32px;
+        position: relative;
+        top: -7px;
+    }
+
+    .tab-title p {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    nav .cross {
+        display: block;
+        font-size: 25px;
+        position: relative;
+        top: -20px;
+        left: -8px;
+    }
+
+    nav .cross-1 {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul .cross-1 {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav img{
+        width: 10px;
+        height: 10px;
+    }
+    nav .logo {
+        height: 139px;
+        margin-left: -154px;
+        border-radius: 10px;
+        left: 124px;
+        position: relative;
+        width: 151px;
+        bottom: 14px;
+    }
+    .contact-left p {
+        margin: 29px 0;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        left: 20px;
+        width: 90%;
+    }
+
+    .header-text {
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+        top: -0px;
+        left: 5px;
+    }
+
+    .header-text h1  br{
+        display: none;
+    }
+    .header-text p {
+        top: -18px;
+        left: 5px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .about-col-1 img {
+        height: auto;
+        top: 0;
+    }
+
+    .about-col-2 p {
+        font-size: 19px;
+        text-align: justify;
+        padding: 3px;
+        position: relative;
+        top: 18px
+    }
+
+    .subtitle {
+        font-size: 30px;
+        font-size: 30px;
+        left: 10px;
+    }
+
+    .tab-title p {
+        font-size: 22px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: left;
+        margin: 20px 2px;
+    }
+
+    .service-list, .work-list {
+        grid-template-columns: 1fr;
+    }
+
+    form input{
+        width: 304px;
+    }
+
+    nav .cross {
+        display: block;
+        font-size: 25px;
+        position: relative;
+        top: -20px;
+        left: -8px;
+    }
+
+    nav .cross-1 {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .cross-1 {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav .logo {
+        height: 139px;
+        margin-left: -154px;
+        border-radius: 10px;
+        left: 124px;
+        position: relative;
+        width: 151px;
+        bottom: 14px;
+    }
+    .contact-left p {
+        margin: 29px 0;
+        font-size: 20px;
+    }
+
 }
