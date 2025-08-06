@@ -41,19 +41,21 @@ nav .logo {
     bottom: 14px;
 }
 
-nav img{
+nav img {
     position: relative;
     left: 59px;
 }
+
 #sideMenu {
     margin-top: 1px;
     margin-right: 3px;
 }
 
-nav ul{
+nav ul {
     position: relative;
     top: -28px;
 }
+
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -101,15 +103,23 @@ nav ul li a:hover::after {
 
 .header-text p {
     position: relative;
-    top: -690px;
+    top: -760px;
     left: -55px;
 }
 
 .header-text h1 {
     font-size: 60px;
     position: relative;
-    top: -670px;
+    top: -742px;
     left: -55px;
+}
+
+.header-text .intro-text {
+    font-size: 23px;
+    margin-top: 30px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 812px;
 }
 
 .header-text h1 span {
@@ -392,6 +402,11 @@ tab-contents li {
 
 /* CONTACT */
 
+#contact {
+    top: -131px;
+    position: relative;
+}
+
 .contact-left {
     flex-basis: 100%;
 }
@@ -400,11 +415,13 @@ tab-contents li {
     margin: 29px 0;
     font-size: 27px;
 }
-.contact-left{
+
+.contact-left {
     top: -44px;
     position: relative;
     padding: 2px;
 }
+
 .contact-left p i {
     margin-right: 15px;
     font-size: 25px;
@@ -505,6 +522,8 @@ textarea::placeholder {
     margin-top: 20px;
     font-size: 20px;
     word-spacing: 10px;
+    top: 130px;
+    position: relative;
 }
 
 .copyright i.heart {
@@ -779,10 +798,11 @@ nav .cross {
         margin: 25px;
     }
 
-    nav img{
+    nav img {
         width: 10px;
         height: 10px;
     }
+
     nav .logo {
         height: 139px;
         margin-left: -154px;
@@ -792,6 +812,7 @@ nav .cross {
         width: 151px;
         bottom: 14px;
     }
+
     .contact-left p {
         margin: 29px 0;
         font-size: 20px;
@@ -815,9 +836,10 @@ nav .cross {
         left: 5px;
     }
 
-    .header-text h1  br{
+    .header-text h1 br {
         display: none;
     }
+
     .header-text p {
         top: -18px;
         left: 5px;
@@ -859,11 +881,12 @@ nav .cross {
         margin: 20px 2px;
     }
 
-    .service-list, .work-list {
+    .service-list,
+    .work-list {
         grid-template-columns: 1fr;
     }
 
-    form input{
+    form input {
         width: 304px;
     }
 
@@ -879,6 +902,7 @@ nav .cross {
         display: block;
         font-size: 25px;
     }
+
     nav ul .cross-1 {
         position: absolute;
         top: 25px;
@@ -902,6 +926,7 @@ nav .cross {
         display: block;
         margin: 25px;
     }
+
     nav .logo {
         height: 139px;
         margin-left: -154px;
@@ -911,13 +936,19 @@ nav .cross {
         width: 151px;
         bottom: 14px;
     }
+
     .contact-left p {
         margin: 29px 0;
         font-size: 20px;
     }
 
-    :placeholder-shown{
+    :placeholder-shown {
         font-size: 5px;
     }
 
+}
+
+.second-projects {
+    top: -110px;
+    position: relative;
 }
